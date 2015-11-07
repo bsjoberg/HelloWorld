@@ -29,12 +29,18 @@ public class TestHelloWorld
         return new TestSuite( TestHelloWorld.class );
     }
 
+    @Test
+    public void testClass(){
+    	HelloWorld helloWorld = new HelloWorld();
+    	assertEquals(helloWorld.getClass(), HelloWorld.class);
+    }
+    
     /**
      * Rigourous Test :-)
      */
     @Test
-    public void testApp()
+    public void testHelloWorld()
     {
-        assertTrue( true );
+        assertEquals("HelloWorld", HelloWorld.getHelloWorld());
     }
 }
