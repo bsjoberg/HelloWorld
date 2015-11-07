@@ -1,6 +1,7 @@
 package org.fun.helloWorld;
 
-import junit.framework.Test;
+import org.junit.Test;
+
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
@@ -23,7 +24,7 @@ public class TestHelloWorld
     /**
      * @return the suite of tests being tested
      */
-    public static Test suite()
+    public static TestSuite suite()
     {
         return new TestSuite( TestHelloWorld.class );
     }
@@ -31,6 +32,7 @@ public class TestHelloWorld
     /**
      * Rigourous Test :-)
      */
+    @Test
     public void testApp()
     {
         assertTrue( true );
